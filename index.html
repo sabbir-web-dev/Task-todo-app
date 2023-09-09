@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task todo app</title>
+
+    <!-- -- font awsome --  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- -- style --  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-wrap">
+        <div class="app">
+            <h3> Task Todo App</h3>
+            <div class="addButton">
+                <span>Add New Task</span>
+                <i  class="fa-solid plus fa-plus"></i>
+            </div>     
+            <h4 class="uTask">Your Task</h4>
+    
+            <div class="all-task" id="task-wrap">
+            </div>
+        </div>
+        <div id="select">
+            <div class=" app">
+                <div class="xmark">
+                    <i id="remove" class="fa-solid fa-xmark"></i>
+                </div>
+                <form action="">
+                    <br>
+                    <label for="todoName">Todo Name:</label>
+                    <br>
+                    <input type="text" name="" id="todoName" class="inputName">
+                    <div class="wrong " id="name"></div>
+                    <br> <br>
+
+                    <label for="inputDate">Date hear:</label>
+                    <br> 
+                    <input type="date" name="" id="inputDate">
+                    <div class="wrong " id="date"></div>
+                    <br>
+
+                    <label for="inputText">Task hear:</label>
+                    <br> 
+                    <textarea name="" id="inputText" cols="30" rows="6"></textarea>
+                    <div class="wrong" id="todo"></div>
+                    <br>
+                    <div class="btn-wrap">
+                        <button id="cancle" onClick="cancleHendle()" type="submit">cancel</button>
+                        <button id="ok"  type="submit">Ok</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- -- java Script --  -->
+    <script src="index.js"></script>
+</body>
+</html>
